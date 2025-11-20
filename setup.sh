@@ -7,6 +7,10 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
+# Show Python Version
+echo "Show Python Version"
+python --version
+
 # Default value for using other source
 use_index=false
 
@@ -146,6 +150,9 @@ sudo apt install -y libavformat-dev libavdevice-dev libdbus-1-dev libglib2.0-dev
 
 
 echo "# Create a Python virtual environment."
+# Show Python Version
+echo "Show Python Version"
+python --version
 # Create a Python virtual environment
 cd $PWD
 python -m venv --system-site-packages ugv-env
