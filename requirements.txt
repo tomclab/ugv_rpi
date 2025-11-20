@@ -42,7 +42,7 @@ fastjsonschema==2.19.0
 filelock==3.13.1
 Flask==2.2.2
 Flask-SocketIO==5.3.6
-flatbuffers==20181003210633
+flatbuffers==25.9.23
 fonttools==4.44.3
 fqdn==1.5.1
 fsspec==2023.10.0
