@@ -55,6 +55,7 @@ You can clone this repository from Waveshare's GitHub to your local machine.
     sudo chmod +x autorun.sh
 ### Install app (it'll take a while before finish)
     sudo ./setup.sh
+    sudo -E env PATH="$PATH" ./setup.sh
 ### Autorun setup
     ./autorun.sh
 ### AccessPopup installation
