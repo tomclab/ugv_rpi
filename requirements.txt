@@ -175,7 +175,7 @@ RTIMULib==7.2.1
 Send2Trash==1.8.2
 sense-hat==2.4.0
 simple-websocket==1.0.0
-simplejpeg==1.6.6
+simplejpeg
 simplejson==3.18.3
 six==1.16.0
 smbus2==0.4.2
@@ -187,9 +187,9 @@ spidev==3.5
 ssh-import-id==5.10
 stack-data==0.6.3
 sympy==1.12
-terminado==0.18.0
-tflite-runtime==2.14.0
-tflite-support==0.1.0a1
+terminado
+
+tflite-support
 thonny==4.1.3
 tinycss2==1.2.1
 toml==0.10.2
