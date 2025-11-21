@@ -154,8 +154,8 @@ echo "# Create a Python virtual environment."
 echo "Show Python Version"
 python --version
 # Create a Python virtual environment
-cd $PWD
-python -m venv  ugv-env
+#cd $PWD
+#python -m venv  ugv-env
 #python -m venv --system-site-packages ugv-env
 
 echo "# Activate a Python virtual environment."
