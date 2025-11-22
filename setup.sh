@@ -7,10 +7,6 @@ if [ "$EUID" -ne 0 ]; then
     exit 1
 fi
 
-# Show Python Version
-echo "Show Python Version"
-python --version
-
 # Default value for using other source
 use_index=false
 
@@ -143,20 +139,14 @@ fi
 echo "# Install required software."
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y libopenblas-dev libatlas3-base libcamera-dev python3-opencv portaudio19-dev python3-picamera2
+sudo apt install -y libopenblas-dev libatlas3-base libcamera-dev python3-opencv portaudio19-dev
 sudo apt install -y util-linux procps hostapd iproute2 iw haveged dnsmasq iptables espeak
-# Tom Update
-sudo apt install -y libavformat-dev libavdevice-dev libdbus-1-dev libglib2.0-dev
-pip install --upgrade pip
+
 
 echo "# Create a Python virtual environment."
-# Show Python Version
-echo "Show Python Version"
-python --version
 # Create a Python virtual environment
 cd $PWD
-python -m venv  ugv-env
-#python -m venv --system-site-packages ugv-env
+python -m venv --system-site-packages ugv-env
 
 echo "# Activate a Python virtual environment."
 
