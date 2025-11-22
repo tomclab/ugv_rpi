@@ -18,7 +18,7 @@ if is_raspberry_pi5():
 else:
     base = BaseController('/dev/serial0', 115200)
 # temp disable light
-# threading.Thread(target=lambda: base.breath_light(15), daemon=True).start()
+threading.Thread(target=lambda: base.breath_light(15), daemon=True).start()
 
 # config file.
 curpath = os.path.realpath(__file__)
